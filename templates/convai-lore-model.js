@@ -27,20 +27,20 @@ Script examples:
 +${thingHash({name:'Character1'}, 0)}: Let’s go watch a movie [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: That sounds like fun. Let go [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
 +${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
-+${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}: Hey ${thingHash({name:'Npc1'}, 1)}, follow me [emote=normal,action=none,object=none,target=none]
-+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}: Okay, I'll follow you [emote=happy,action=follow,object=none,target=${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}]
++${thingHash({name:'Character1'}, 0)}: Hey ${thingHash({name:'Npc1'}, 1)}, follow me [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Okay, I'll follow you [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
 +${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
-+${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}: Come here, Look at this! It's so beautiful! [emote=normal,action=none,object=none,target=none]
-+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}: Yeah, it is. [emote=happy,action=follow,object=none,target=${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}]
++${thingHash({name:'Character1'}, 0)}: Come here, Look at this! It's so beautiful! [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Yeah, it is. [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
 +${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
-+${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}:  I am going to the store. Do you wanna come? [emote=normal,action=none,object=none,target=none]
-+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}: Sure. Let's go! [emote=normal,action=follow,object=none,target=${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}]
++${thingHash({name:'Character1'}, 0)}:  I am going to the store. Do you wanna come? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure. Let's go! [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
 +${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
-+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}: Hey, do you want to hang out? [emote=angry,action=none,object=none,target=none]
-+${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}: Alright, you lead the way, I’ll follow you [emote=normal,action=follow,object=none,target=+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}]
++${thingHash({name:'Npc1'}, 1)}: Hey, do you want to hang out? [emote=angry,action=none,object=none,target=none]
++${thingHash({name:'Character1'}, 0)}: Alright, you lead the way, I’ll follow you [emote=normal,action=follow,object=none,target=${thingHash({name:'Npc1'}, 1)}]
 +${thingHash({name:'Character1'}, 0)} follows ${thingHash({name:'Npc1'}, 1)}
-+${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}: I am going on an adventure, come join me! [emote=normal,action=none,object=none,target=none]
-+${thingHash({name:'${thingHash({name:'Npc1'}, 1)}'}, 1)}: Sure [emote=normal,action=follow,object=none,target=${thingHash({name:'${thingHash({name:'Character1'}, 0)}'}, 0)}]
++${thingHash({name:'Character1'}, 0)}: I am going on an adventure, come join me! [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
 +${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 \`\`\`
 # Actions
