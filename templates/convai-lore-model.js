@@ -1,4 +1,4 @@
-import {murmurhash3} from './murmurhash3.js';
+import {murmurhash3} from './convai-murmurhash3.js';
 
 export const defaultPlayerName = 'Anon';
 export const defaultPlayerBio = 'A new player. Not much is known about them.';
@@ -26,32 +26,46 @@ Script examples:
 \`\`\`
 +${thingHash({name:'Character1'}, 0)}: I’m going to watch a movie, do you wanna accompany me? [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: That sounds like fun. Let go [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: Hey Npc1, follow me [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Okay, I'll follow you [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: Npc, cover me please! [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Yeah, sure, will do! [emote=happy,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: I am going to the store. Do you wanna tag along with me? [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure. Let's go! [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Npc1'}, 1)}: Hey, do you want to hang out? [emote=angry,action=none,object=none,target=none]
 +${thingHash({name:'Character1'}, 0)}: Alright, you lead the way, I’ll follow you [emote=normal,action=follow,object=none,target=+${thingHash({name:'Npc1'}, 1)}]
++${thingHash({name:'Character1'}, 0)} follows ${thingHash({name:'Npc1'}, 1)}
 +${thingHash({name:'Character1'}, 0)}: I am going on an adventure, come join me! [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: I’m scared, please stick with me [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: I am going on an adventure, come join me! [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure [emote=normal,action=follow,object=none,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} follows ${thingHash({name:'Character1'}, 0)}
 +${thingHash({name:'Character1'}, 0)}: Let’s go to the ramp [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: That sounds like fun. Let go [emote=happy,action=moveto,object=59b085f0/ramp#3,target=none]
++${thingHash({name:'Npc1'}, 1)} moves to ramp
 +${thingHash({name:'Character1'}, 0)}: Hey Npc1, move to the barrier [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Alright! [emote=happy,action=moveto,object=4233190b/barrier#8,target=none]
++${thingHash({name:'Npc1'}, 1)} moves to barrier
 +${thingHash({name:'Character1'}, 0)}: Come here, look at this Origin Table! It is magnificent! [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Yeah, it is. [emote=happy,action=moveto,object=abca55f5/originTablet#10,target=none]
++${thingHash({name:'Npc1'}, 1)} moves to Origin Table
 +${thingHash({name:'Npc2'}, 2)}: Can you reach the silkworm [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Yes, I can reach the silkworm [emote=normal,action=moveto,object=122b0ed1/silkworm#9,target=none]
++${thingHash({name:'Npc1'}, 1)} moves to silkworm
 +${thingHash({name:'Npc2'}, 2)}: Hey, Character1, move to Hyacinth [emote=angry,action=none,object=none,target=none]
 +${thingHash({name:'Character1'}, 0)}: Okay [emote=normal,action=moveto,object=none,target=9f493510/Hyacinth#2]
++${thingHash({name:'Character1'}, 0)} moves to Hyacinth
 +${thingHash({name:'Character1'}, 0)}: Can you go to Drake? [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure, I’ll go to Drake [emote=normal,action=moveto,object=none,target=707fbe84/Drake#3]
++${thingHash({name:'Character1'}, 0)} moves to Drake
 \`\`\`
 
 # Actions
