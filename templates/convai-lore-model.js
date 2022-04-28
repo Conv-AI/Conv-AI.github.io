@@ -88,6 +88,7 @@ drop
 use
 stop
 attack
+moveto
 
 # Scene 1
 
