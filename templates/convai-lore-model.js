@@ -66,6 +66,18 @@ Script examples:
 +${thingHash({name:'Character1'}, 0)}: Can you go to Drake? [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure, I’ll go to Drake [emote=normal,action=moveto,object=none,target=707fbe84/Drake#3]
 +${thingHash({name:'Character1'}, 0)} moves to Drake
++${thingHash({name:'Npc2'}, 2)}: Hey, Character1, move to Hyacinth [emote=angry,action=none,object=none,target=none]
++${thingHash({name:'Character1'}, 0)}: Okay [emote=normal,action=moveto,object=none,target=9f493510/Hyacinth#2]
++${thingHash({name:'Character1'}, 0)} moves to 9f493510/Hyacinth#2
++${thingHash({name:'Character1'}, 0)}: Can you go to Drake? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure, I'll go to Drake [emote=normal,action=moveto,object=none,target=707fbe84/Drake#3]
++${thingHash({name:'Character1'}, 0)} moves to 707fbe84/Drake#3
++${thingHash({name:'Character1'}, 0)}: Could you go see what Scillia is up to? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Yes, I can go see what Scillia is up to [emote=normal,action=moveto,object=none,target=a8e44f13/Scillia#4]
++${thingHash({name:'Character1'}, 0)} moves to 707fbe84/Drake#3
++${thingHash({name:'Character1'}, 0)}: Could you check on Juniper? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure. I'll go check on her [emote=normal,action=moveto,object=none,target=a6dfd77c/Juniper#5]
++${thingHash({name:'Character1'}, 0)} moves to 707fbe84/Drake#3
 \`\`\`
 
 # Actions
