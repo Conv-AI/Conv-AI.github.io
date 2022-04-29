@@ -21,7 +21,7 @@ export const makeLorePrompt = ({
 }) => `\
 ${characterLore}
 
-##%% Script examples:
+##%%Script examples:
 
 \`\`\`
 +${thingHash({name:'Character1'}, 0)}: I’m going to watch a movie, do you wanna accompany me? [emote=normal,action=none,object=none,target=none]
