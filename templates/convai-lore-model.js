@@ -8,7 +8,7 @@ export const defaultObjectDescription = 'A thing. Not much is known about it.';
 const hash = s => murmurhash3(s).toString(16);
 const thingHash = (o, index) => `${hash(o.name)}/${o.name}#${index+1}`;
 const characterLore = `\
-# Overview
+##%%Overview
 
 AI anime avatars in a virtual world. They have human-level intelligence and unique and interesting personalities.
 `;
@@ -21,7 +21,7 @@ export const makeLorePrompt = ({
 }) => `\
 ${characterLore}
 
-Script examples:
+##%% Script examples:
 
 \`\`\`
 +${thingHash({name:'Character1'}, 0)}: I’m going to watch a movie, do you wanna accompany me? [emote=normal,action=none,object=none,target=none]
@@ -95,7 +95,7 @@ Script examples:
 +${thingHash({name:'Npc1'}, 1)} picks up 4358d0f5/bomb#15
 \`\`\`
 
-# Actions
+##%%Actions
 follow
 give
 fetch
@@ -105,7 +105,7 @@ stop
 attack
 moveto
 
-# Scene 1
+##%%Scene 1
 
 # Setting
 
@@ -128,7 +128,7 @@ ${
   objects.map((o, i) => thingHash(o, i)).join('\n')
 }
 
-## Script (raw format)
+##%%Script (raw format)
 
 ${
   messages.map(m => {
