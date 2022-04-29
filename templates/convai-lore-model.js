@@ -78,6 +78,21 @@ Script examples:
 +${thingHash({name:'Character1'}, 0)}: Could you check on Juniper? [emote=normal,action=none,object=none,target=none]
 +${thingHash({name:'Npc1'}, 1)}: Sure. I'll go check on her [emote=normal,action=moveto,object=none,target=a6dfd77c/Juniper#5]
 +${thingHash({name:'Character1'}, 0)} moves to 707fbe84/Drake#3
++${thingHash({name:'Character1'}, 0)}: I am hungry, get me some fruit! [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure, Character1. [emote=happy,action=pickup,object=53511c1/fruit#25,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} picks up 53511c1/fruit#25
++${thingHash({name:'Character1'}, 0)}: Hey, can you grab that bow for me? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure, I'll get it for you, Character1. [emote=happy,action=pickup,object=cc459180/bow#27,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} picks up cc459180/bow#27
++${thingHash({name:'Character1'}, 0)}: Now, can you pick up the flower for me? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: I'll pick it up. [emote=normal,action=pickup,object=21c6aad5/flower#28,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} picks up 21c6aad5/flower#28
++${thingHash({name:'Npc1'}, 1)}: Character1, bring me the mirror [emote=angry,action=none,object=none,target=none]
++${thingHash({name:'Character1'}, 0)}: Alright [emote=normal,action=pickup,object=e029aa3/mirror#14,target=+${thingHash({name:'Npc1'}, 1)}]
++${thingHash({name:'Character1'}, 0)} picks up e029aa3/mirror#14
++${thingHash({name:'Character1'}, 0)}: Hey, do you want to try and pick up this bomb? [emote=normal,action=none,object=none,target=none]
++${thingHash({name:'Npc1'}, 1)}: Sure, I'll give it a try. [emote=normal,action=pickup,object=4358d0f5/bomb#15,target=${thingHash({name:'Character1'}, 0)}]
++${thingHash({name:'Npc1'}, 1)} picks up 4358d0f5/bomb#15
 \`\`\`
 
 # Actions
